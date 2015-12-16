@@ -1,0 +1,179 @@
+.form-table label {
+	font-weight: normal;
+}
+.form-table label.label-big {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.supsystic-plugin table.form-table tr {
+	border-bottom: medium none !important;
+}
+/* Map shortcode */
+.shortcode-wrap {
+    padding: 10px 10px 0;
+    margin: 5px 0;
+    background-color: rgba(241, 196, 15, .3);
+    border: 1px solid rgba(241, 196, 15, .3);
+}
+#shortcodeCode {
+    font-family: Consolas, Monaco, "Lucida Console", monospace;
+}
+/*Marker icons*/
+.iconsList {
+	list-style: none;
+}
+.previewIcon {
+	float: left;
+	cursor: pointer;
+	min-height: 65px;
+	padding: 0 8px;
+}
+/* Markers list on edit page */
+#markerList {
+    margin: 15px 0;
+    border-top: 1px solid #e9edee;
+    padding-top: 15px;
+	overflow-x: auto;
+	background-color: #fff;
+}
+.egm-marker {
+    padding: 10px 5px;
+}
+.egm-marker:hover {
+    background-color: #f6f7f7;
+}
+.egm-marker .egm-marker-icon img {
+    height: 22px;
+    margin-top: -2px;
+}
+.egm-marker .egm-marker-latlng {
+    color: #bdc3c7;
+}
+.egm-marker .egm-marker-actions {
+    text-align: right;
+}
+.gmpMapShortCodeShell {
+	background: none;
+	font-family: Consolas, Monaco, monospace;
+	/*float: right;*/
+	color: #a4aaac;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+}
+#gmpGmapTbl_cb {
+	min-width: 21px;
+}
+#gmpExtendOptsBtn {
+	width: 100%;
+	text-align: center;
+}
+.gmpMapPosChangeSelect {
+	width: calc(100% - 20px);
+}
+.gmpProOptMiniLabel {
+	/*padding-left: 20px;*/
+	display: block;
+	margin-bottom: -20px;
+}
+.gmpProOptMiniLabel a {
+	font-size: 10px;
+	text-decoration: none;
+	color: #0074a2;
+}
+.gmpProOptMiniLabel a:hover {
+	color: #2ea2cc;
+}
+#gmpMapForm .form-table th,
+#gmpMarkerForm .form-table th {
+	width: 170px;
+}
+#gmpMapForm .form-table th label,
+#gmpMarkerForm .form-table th label {
+	font-size: 15px;
+	float: left;
+	max-width: 140px;
+}
+/*Main map/marker tabs*/
+#gmpMapMarkerTabs a.nav-tab {
+	padding-bottom: 5px;
+	border-color: transparent;
+	background-color: #fff;
+	margin-left: 0;
+}
+#gmpMapMarkerTabs a.nav-tab-active {
+	border-top-color: #000;
+	border-left-color: #ccc;
+	border-right-color: #ccc;
+}
+#gmpMapMarkerTabs a.nav-tab p {
+	font-size: 16px;
+	font-weight: normal;
+	min-height: 35px;
+}
+#gmpMapMarkerTabs a.nav-tab-active p {
+	font-weight: bold;
+}
+#gmpMapMarkerTabs a.nav-tab:not(.nav-tab-active):hover {
+	border-top-color: #ccc;
+}
+#gmpMapMarkerTabs a.nav-tab p button.button {
+	font-weight: normal;
+}
+#gmpMapMarkerTabs a.nav-tab p button.button:first-of-type {
+	margin-left: 10px;
+}
+#gmpMapMarkerTabs .nav-tab-wrapper {
+	border-bottom-color: #000;
+}
+/*Map/marker main action btns*/
+#gmpMapMainBtns, #gmpMarkerMainBtns {
+	display: none;
+}
+/*Map markers list*/
+.gmpMmlElement {
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	float: left;
+	position: relative;
+	max-height: 265px;
+}
+.gmpMmlElement img {
+	max-width: 100%;
+}
+.gmpMmlElement:hover img, 
+.gmpMmlElement:hover .gmpMmlElementBtnShell .button {
+	box-shadow: 5px 5px 5px #000;
+}
+.gmpMmlElementBtnShell {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 10px;
+	left: 0;
+}
+.gmpMmlElementBtnShell .button {
+	margin: 0 auto;
+	font-size: 18px;
+}
+.gmpMapMarkerRow .egm-marker-title {
+	word-break: break-all; /*for long marker titles*/
+}
+#gmpMarkersListWnd {
+	padding: 0;
+}
+/*Markers list table sortable*/
+#markerList .ui-sortable-placeholder {
+	height: 44px;
+	border: 1px solid #a5b6b2;
+    box-shadow: -3px -3px 6px #a5b6b2 inset;
+    display: block;
+}
+#gmpMarkersSortMsg {
+	display: inline;
+}
+#gmpMarkersSortMsg img {
+	height: auto;
+}
+

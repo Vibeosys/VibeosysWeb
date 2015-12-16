@@ -1,0 +1,322 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "The Social Links"
+msgstr ""
+
+#. Short description.
+msgid "The Social Links plugin adds a widget and shortcode to your WordPress website allowing you to display icons linking to your social profiles."
+msgstr ""
+
+#. Screenshot description.
+msgid "Settings Page"
+msgstr ""
+
+#. Screenshot description.
+msgid "Default Social Links"
+msgstr ""
+
+#. Found in description list item.
+msgid "Google+"
+msgstr ""
+
+#. Found in description list item.
+msgid "Facebook"
+msgstr ""
+
+#. Found in description list item.
+msgid "Twitter"
+msgstr ""
+
+#. Found in description list item.
+msgid "Linkedin"
+msgstr ""
+
+#. Found in description list item.
+msgid "YouTube"
+msgstr ""
+
+#. Found in description list item.
+msgid "Instagram"
+msgstr ""
+
+#. Found in description list item.
+msgid "Pintrest"
+msgstr ""
+
+#. Found in description list item.
+msgid "Behance"
+msgstr ""
+
+#. Found in description list item.
+msgid "Bitcoin"
+msgstr ""
+
+#. Found in description list item.
+msgid "Delicious"
+msgstr ""
+
+#. Found in description list item.
+msgid "DeviantArt"
+msgstr ""
+
+#. Found in description list item.
+msgid "Digg"
+msgstr ""
+
+#. Found in description list item.
+msgid "Dribble"
+msgstr ""
+
+#. Found in description list item.
+msgid "Flickr"
+msgstr ""
+
+#. Found in description list item.
+msgid "Foursquare"
+msgstr ""
+
+#. Found in description list item.
+msgid "GitHub"
+msgstr ""
+
+#. Found in description list item.
+msgid "LastFM"
+msgstr ""
+
+#. Found in description list item.
+msgid "Medium"
+msgstr ""
+
+#. Found in description list item.
+msgid "Skype"
+msgstr ""
+
+#. Found in description list item.
+msgid "Soundcloud"
+msgstr ""
+
+#. Found in description list item.
+msgid "Spotify"
+msgstr ""
+
+#. Found in description list item.
+msgid "Tumblr"
+msgstr ""
+
+#. Found in description list item.
+msgid "Vine"
+msgstr ""
+
+#. Found in description list item.
+msgid "WeChat"
+msgstr ""
+
+#. Found in description list item.
+msgid "WordPress"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The Social Links plugin adds a widget and shortcode to your WordPress website allowing you to display icons linking to your social profiles. The new version includes the following social networks:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "We've also added support for a <strong>shortcode</strong> (<code>[the-social-links]</code>) for use in WordPress posts and pages and a <strong>custom template tag</strong> (<code>&lt;?php the_social_links();?&gt;</code>) for use in template files."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>The Social Links is translation ready!</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "It's important to note that we will only support the above social networks in the free version. Want extra social networks? You can purchase <a href=\"https://digitalleap.co.za/wordpress/plugins/social-links/the-social-links-pack/\">The Social Links Pack</a> for only $5 (unlimited commercial use) which gives you access to:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For support (priority support for $15) and feature requests head to <a href=\"http://digitalleap.co.za/wordpress/plugin/the-social-links/\">digitalleap.co.za</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>The reason we charge for support and extra social networks is to make sure we maintain a high level of support on this plugin. Our developers need to get paid even though they love contributing towards the community.</strong>"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Navigate to Plugins-&gt;Add New"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Search for \"The Social Links\" and click \"Install Now\""
+msgstr ""
+
+#. Found in installation list item.
+msgid "Click “Settings” or browse to the \"The Social Links\" once you have installed the plugin to configure your social network links."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Go to your widgets and add the \"The Social Links\" widget to your sidebar, add the shortcode (<code>[the-social-links]</code>) in your posts and pages or add the custom template tag (<code>&lt;?php the_social_links();?&gt;&lt;?php the_social_links();?&gt;</code>) in your template files."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Installation via WordPress Dashboard:"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed missing semi-colon on non-breaking space."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added missing translation strings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a translation domain in the widget management panel."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for WordPress translate."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Prepped the system for style packs. Coming soon!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed spelling mistake"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed alignment issue on shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Started implementing extendable features."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed fatal error on getting social networks. Should fix memory leak."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Used construct on the classes to support depreciation in 4.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the way the widget is registered."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed default style link hover colour in widgets."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Recreated the plugin from the ground up"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for font based icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed extra social networks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ability to order the social networks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added YouVersion correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Google+ icon did not upload correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move across to Digital Leap. Includes support for Google+."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added extra social networks incl. Google+ and removed under performing ones"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Image src attribute had an extra slash in it."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Subversion did not pick up all of the changes. This is to push the update to all updated installs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Spelling Mistake"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Title Error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a minor bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added even more social networks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the layout"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to have links open in current or new window"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added link to the admin bar (Appearance -&gt; The Social Links)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add more social networks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added screenshots"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial Release"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I add the bookmarks to my theme manually (also for themes that do not support widgets)?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Are you going to add other social networks?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I use other icons?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I change the order of the icons?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Using the shortcode (<code>[the-social-links]</code>) in your posts and pages or by adding the custom template tag (<code>&lt;?php the_social_links();?&gt;</code>) in your template files."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To keep the plugin as fluid as possible we have decided to minimise the amount of networks in the free version. If you have a network that you think should be added, please head to our <a href=\"http://digitalleap.co.za/wordpress/plugin/the-social-links/\">support page</a> to submit a request."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "We have decided that to keep a high standard for the plugin we will be using font based icons. All icons are styled by CSS. We are developing additional premium icon packs that you will be able to purchase."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can change the order on your settings page."
+msgstr ""

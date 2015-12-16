@@ -1,0 +1,124 @@
+/*****
+ * Social Profile Icons
+**/
+
+.splsocial {
+	display: table;   /* Allow the vertical centering to work */
+	
+	/*
+	 * It is recommended to include it in your own stylesheet.
+	 *		.splsocial {
+	 *			margin: 0 auto;
+	 *		}
+	 * Uncomment the next line to include it through the plugin (not recommended).*/
+	/* margin: 0 auto; */
+
+	margin-bottom: 10px;
+}
+
+
+.splsocial ul.social {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 35px;
+}
+
+.splsocial ul.social:hover li {
+	opacity: 0.2;
+	filter: alpha(opacity=20); /* For IE */
+}
+
+.splsocial ul.social li {
+	display: inline;
+    padding: 5px;
+	float: left;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	padding-right: 3px;
+
+	transition-property: opacity;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+
+	transition-duration: 500ms;
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+}
+
+.splsocial ul.social li:hover {
+	opacity: 1;
+	filter: none; /* Check this:; Assumed it would be alpha(opacity=100). */
+	-webkit-filter: grayscale(0%); /* Check this: Is it necessary or okay? */
+}
+
+.splsocial ul.social li a {
+	text-align: center;
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: relative;
+}
+
+.splsocial ul.social li.tumblr { background-image: url("../../assets/images/circle/color/tumblr.svg") }
+.splsocial ul.social li.vimeo { background-image: url("../../assets/images/circle/color/vimeo.svg") }
+.splsocial ul.social li.facebook { background-image: url("../../assets/images/circle/color/facebook.svg") }
+.splsocial ul.social li.flickr { background-image: url("../../assets/images/circle/color/flickr.svg") }
+.splsocial ul.social li.pinterest { background-image: url("../../assets/images/circle/color/pinterest.svg") }
+.splsocial ul.social li.youtube { background-image: url("../../assets/images/circle/color/youtube.svg") }
+.splsocial ul.social li.twitter { background-image: url("../../assets/images/circle/color/twitter.svg") }
+.splsocial ul.social li.github { background-image: url("../../assets/images/circle/color/github.svg") }
+.splsocial ul.social li.dribbble { background-image: url("../../assets/images/circle/color/dribbble.svg") }
+.splsocial ul.social li.gplus { background-image: url("../../assets/images/circle/color/gplus.svg") }
+.splsocial ul.social li.linkedin { background-image: url("../../assets/images/circle/color/linkedin.svg") }
+.splsocial ul.social li.spotify { background-image: url("../../assets/images/circle/color/spotify.svg") }
+.splsocial ul.social li.instagram { background-image: url("../../assets/images/circle/color/instagram.svg") }
+.splsocial ul.social li.behance { background-image: url("../../assets/images/circle/color/behance.svg") }
+.splsocial ul.social li.rdio { background-image: url("../../assets/images/circle/color/rdio.svg") }
+.splsocial ul.social li.soundcloud { background-image: url("../../assets/images/circle/color/soundcloud.svg") }
+
+/* These are styles for alternative layouts.*/
+.splsocial ul.social.circle.bw li.tumblr { background-image: url("../../assets/images/circle/bw/tumblr.svg") }
+.splsocial ul.social.circle.bw li.vimeo { background-image: url("../../assets/images/circle/bw/vimeo.svg") }
+.splsocial ul.social.circle.bw li.facebook { background-image: url("../../assets/images/circle/bw/facebook.svg") }
+.splsocial ul.social.circle.bw li.flickr { background-image: url("../../assets/images/circle/bw/flickr.svg") }
+.splsocial ul.social.circle.bw li.pinterest { background-image: url("../../assets/images/circle/bw/pinterest.svg") }
+.splsocial ul.social.circle.bw li.youtube { background-image: url("../../assets/images/circle/bw/youtube.svg") }
+.splsocial ul.social.circle.bw li.twitter { background-image: url("../../assets/images/circle/bw/twitter.svg") }
+.splsocial ul.social.circle.bw li.github { background-image: url("../../assets/images/circle/bw/github.svg") }
+.splsocial ul.social.circle.bw li.dribbble { background-image: url("../../assets/images/circle/bw/dribbble.svg") }
+.splsocial ul.social.circle.bw li.gplus { background-image: url("../../assets/images/circle/bw/gplus.svg") }
+
+.splsocial ul.social.square li.tumblr { background-image: url("../../assets/images/square/color/tumblr.svg") }
+.splsocial ul.social.square li.vimeo { background-image: url("../../assets/images/square/color/vimeo.svg") }
+.splsocial ul.social.square li.facebook { background-image: url("../../assets/images/square/color/facebook.svg") }
+.splsocial ul.social.square li.flickr { background-image: url("../../assets/images/square/color/flickr.svg") }
+.splsocial ul.social.square li.pinterest { background-image: url("../../assets/images/square/color/pinterest.svg") }
+.splsocial ul.social.square li.youtube { background-image: url("../../assets/images/square/color/youtube.svg") }
+.splsocial ul.social.square li.twitter { background-image: url("../../assets/images/square/color/twitter.svg") }
+.splsocial ul.social.square li.github { background-image: url("../../assets/images/square/color/github.svg") }
+.splsocial ul.social.square li.dribbble { background-image: url("../../assets/images/square/color/dribbble.svg") }
+.splsocial ul.social.square li.gplus { background-image: url("../../assets/images/square/color/gplus.svg") }
+.splsocial ul.social.square li.linkedin { background-image: url("../../assets/images/square/color/linkedin.svg") }
+.splsocial ul.social.square li.behance { background-image: url("../../assets/images/square/color/behance.svg") }
+.splsocial ul.social.square li.rdio { background-image: url("../../assets/images/square/color/rdio.svg") }
+.splsocial ul.social.square li.soundcloud { background-image: url("../../assets/images/square/color/soundcloud.svg") }
+.splsocial ul.social.square li.instagram { background-image: url("../../assets/images/square/color/instagram.svg") }
+.splsocial ul.social.square li.spotify { background-image: url("../../assets/images/square/color/spotify.svg") }
+
+
+
+.splsocial ul.social.square.bw li.tumblr { background-image: url("../../assets/images/square/bw/tumblr.svg") }
+.splsocial ul.social.square.bw li.vimeo { background-image: url("../../assets/images/square/bw/vimeo.svg") }
+.splsocial ul.social.square.bw li.facebook { background-image: url("../../assets/images/square/bw/facebook.svg") }
+.splsocial ul.social.square.bw li.flickr { background-image: url("../../assets/images/square/bw/flickr.svg") }
+.splsocial ul.social.square.bw li.pinterest { background-image: url("../../assets/images/square/bw/pinterest.svg") }
+.splsocial ul.social.square.bw li.youtube { background-image: url("../../assets/images/square/bw/youtube.svg") }
+.splsocial ul.social.square.bw li.twitter { background-image: url("../../assets/images/square/bw/twitter.svg") }
+.splsocial ul.social.square.bw li.github { background-image: url("../../assets/images/square/bw/github.svg") }
+.splsocial ul.social.square.bw li.dribbble { background-image: url("../../assets/images/square/bw/dribbble.svg") }
+.splsocial ul.social.square.bw li.gplus { background-image: url("../../assets/images/square/bw/gplus.svg") }

@@ -1,0 +1,12 @@
+.gmpInfoWindowtitle {
+    font-size: 19px !important;
+    font-weight: bold !important;
+    color: brown;
+    margin: 0 0 5px 6px;
+}
+.gmp_MapPreview img { 
+	max-width: none !important; 
+}
+.map_container img{
+    max-width: inherit !important;   
+}
