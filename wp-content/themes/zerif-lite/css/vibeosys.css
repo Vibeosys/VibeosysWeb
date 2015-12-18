@@ -7,7 +7,14 @@ and open the template in the editor.
     Created on : Dec 15, 2015, 7:02:48 PM
     Author     : niteen
 */
+// to hide title of slider
 
+h3.uris-slider-title{
+    display: none;
+}
+.col-xs-12,.wrapper-about-us .col-xs-9{
+    min-width: 250px;
+}
 
 .vibe-bg{
     
@@ -30,6 +37,8 @@ and open the template in the editor.
     padding-left: 0px;
     background-color: gainsboro;
     margin-top: 20px;
+    min-width: 300px;
+    height: auto;
 }
 .col-xs-5{
     background-color: gainsboro;
@@ -38,6 +47,7 @@ and open the template in the editor.
 .phone ,.cemail{
     width: 100%;
     height: auto;
+    padding-bottom: 10px;
 }
 .phone img,.cemail img{
     position: relative;
@@ -59,7 +69,7 @@ and open the template in the editor.
      color: blue;
 }
 .phone-span{
-     left:34%;
+     left:30%;
      color: black;
 }
 // style for about us 
@@ -84,49 +94,157 @@ and open the template in the editor.
 }
 .person-info .name{
     padding-top: 30px;
-    text-align: center;
+    //text-align: center;
     min-width: 200px;
 }
-.person-info .Discription{
+.Discription{
     position: relative;
     min-width: 160px;
-    font-size: x-small; 
+    font-size: 13px;
+    text-height: font-size; 
 }
 
-.wrapper-about-us .box, wrapper-about-us{
+.remove-padding,.wrapper-about-us .box, wrapper-about-us{
     padding-left: 0px;
 }
 
 .sidebar{
     position: relative;
-    min-width: 200px;
+    min-width: 250px;
 }
 .side-header{
     background-color: gainsboro;
     width: 100%;
-    height: 50px;
+    height: auto;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    font-weight: bold;
-    
+ }
+ 
+.side-header h2{
+ font-size: 18px;
+ text-height: font-size;
 }
+
+    
 .box{
     margin-top: 20px;
 }
 .company-address{
     //font-size: smaller;
 }
-.PostalAddress .streetAddress{
-    font-size: 100px;;
+.addressLocality,.postalCode, .streetAddress,.openingHours{
+    font-size: 13px;;
     text-height: font-size;
     
 }
+.page-details,.page-head h2{
+    font-size: 17px;
+    text-height: font-size;
+}
+.page-details{
+    
+}
 
-.career-header{
+//style for career  page
+div.career-header.page-head{
     margin-top: 50px;
+    min-width: 300px;
 }
 .content-text{
-    margin-top: 30px;
+    margin-top: 15px;
+    min-width: 200px;
 }
 
+
+
+.job-description{
+    position: relative;
+    min-width: 250px;
+    font-style: italic;
+}
+
+.job-header{
+    width: 100%;
+    background-color: gainsboro;
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    min-width: 250px;
+}
+.job-header > img{
+    position: relative;
+    top:-10px;
+    left: -10px;
+}
+.job-header > i{
+    float: right;
+}
+.social-link{
+    margin-left: 25px;
+}
+
+.image-container{
+    min-width: 300px;
+}
+
+.career-form{
+    min-width:250px;
+}
+
+nav{
+    height: 100%;
+    margin-top: 20px;
+}
+
+ul.no-style{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type="text"]:focus{
+    border:2px solid #999;
+}
+
+///mobile development styles
+
+.mobdev-img{
+    height: 204px;
+    width: 204px;
+    margin-left: 40%;
+}
+.mobdev-head{
+    min-width: 200px;
+}
+
+.mobdev-description{
+    min-width:250px;
+}
+.mobdev-android{
+    border-color: gainsboro;
+      min-width: 250px;
+}
+
+.mobdev-iphone{
+    border-color: gainsboro;
+    min-width: 250px;
+    
+}
+
+.mobdev-win{
+    border-color: gainsboro;
+    min-width: 250px;
+}
+.margin-top{
+    margin-top: 50px;
+  
+}
+.div-icon{
+    width: 100px;
+    height: 100px;
+   // background: red;
+    border-radius: 50%;
+    //border: 2px solid black;
+    margin-left: 36%;
+}

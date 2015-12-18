@@ -85,7 +85,7 @@ if(!class_exists('WP_Adress_Schema_Display')) {
 				$time_array = explode(' ', $time);
 				$day_array = explode('-', $time_array[0]);
 				if($time_array[1] != 'Closed') {
-					$html = '<time itemprop="openingHours" datetime="'.$time.'">';	
+					$html = '<time class="openingHours" datetime="'.$time.'">';	
 					if(count($day_array) > 1) {
 						$html .= $this->getDayName($day_array[0]).' to '.$this->getDayName($day_array[1]);					
 					} else {

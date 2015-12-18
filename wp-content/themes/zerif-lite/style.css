@@ -1,4 +1,6 @@
-
+.link-focus {
+	//color:#0074c2;
+}
 
 
 /*--------------------------------------------------------------
@@ -591,7 +593,7 @@ input[type="number"],
 select,
 textarea {
 	color: #555;
-	border: 2px solid #999;
+	border: 1px solid #999;
 	border-radius: 5px;
 }
 input[type="text"]:focus,
@@ -1037,7 +1039,7 @@ a:active {
 	margin: auto;
 	z-index: 1;
 	content: "";
-	width: 10%;
+	width: auto;
 	height: 2px;
 	background: #13078C;
 	bottom: -9px;
@@ -1435,7 +1437,7 @@ object {
 }
 /*----  SECTION:  HOME > TOP BAR   ----*/
  #site-navigation {
- 	height: 1px;
+ 	height: 100%;
 	float: right;
 	margin-right: 0;
 	margin-left: 0;
@@ -1493,8 +1495,10 @@ object {
 	position: absolute; top: 100%;
 	background:#fff;
 	width:200px;
-	box-shadow: 3px 3px 2px rgba(50, 50, 50, 0.08);
+	box-shadow: 3px 3px 2px grey;
 	z-index: 9999;
+        //border: 1px solid grey;
+        margin-top: 20px;
 }
 .navbar-inverse .navbar-nav ul.sub-menu {
 	margin:0;
@@ -1503,18 +1507,22 @@ object {
 	position: absolute;
 	top:0;
 }
-.navbar-inverse .navbar-nav ul.sub-menu li {
+.navbar-inverse .navbar-nav ul.sub-menu  li {
 	float: none;
 	position: relative;
 	list-style:none;
 	padding:10px;
+        font-size: 10px;
+        text-height: font-size;
+        
 }
 .navbar-inverse .navbar-nav ul.sub-menu li a {
 	color:#404040;
 }
 .navbar-inverse .navbar-nav ul.sub-menu li:hover > a,
 .navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
-	color:#e96656;
+	color:#0074c2;
+        //background-color: gainsboro;
 }
 .navbar-inverse ul ul {
 	left: -999em;
@@ -1547,7 +1555,7 @@ object {
 }
 .navbar-inverse .navbar-nav>li>a:hover, 
 .navbar-inverse .navbar-nav>li>a.link-focus {
-	color: #e96656;
+	color: #0074c2;
 	outline: none;
 }
 .navbar-toggle {
@@ -1608,6 +1616,9 @@ object {
 	position: relative;
 	outline: none;
 }
+ul.nav > li.menu-item-home:hover {
+    border-bottom: 2px solid #13078C;
+}
 ul.nav > li.menu-item-home > a:before {
 	content: "";
 	display: none;
@@ -1630,7 +1641,7 @@ ul.nav > li.current_page_item > a:before, ul.nav > li.current-menu-item > a:befo
 	content: "";
 	width: 75%;
 	height: 2px;
-	background: #e96656;
+	//background: #e96656;
 	bottom: 0px;
 	left: 12.5%;
 	display: block;
@@ -5182,7 +5193,7 @@ span.bbp-admin-links a:hover {
     margin: auto;
     z-index: 1;
     content: "";
-    width: 10%;
+    width: 100%;
     height: 2px;
     background: blue;
     bottom: 0px;
@@ -5804,9 +5815,10 @@ body.custom-background {
 	.navbar-inverse .navbar-nav ul.sub-menu {
 		display: none !important;
 		position: relative;
-		top: 0;
-		box-shadow: none;
+		top: 20px;
+		//box-shadow: none;
 		width: 100%;
+                border: 1px solid gray;
 	}
 	.navbar-inverse .navbar-nav li.this-open > ul {
 		display: block !important;
@@ -5968,11 +5980,11 @@ body.custom-background {
 	    padding-top: 40%;
 	}
 	.intro-text{
-        font-size: 32px;
+        font-size: 28px;
         line-height: 37px;
     }
 	h2 {
-		font-size: 6.5vw !important;
+		//font-size: 6.5vw !important;
 	}
 	.other-focus-list ul li {
 		display: block;
@@ -6288,5 +6300,4 @@ body.custom-background {
    // min-height: 100px;
     
 }
-
 

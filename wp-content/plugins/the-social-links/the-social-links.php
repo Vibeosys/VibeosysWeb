@@ -303,7 +303,7 @@ class The_Social_Links{
 
     					<li class="tsl-item">
     						<i class="fa fa-arrows-v"></i>&nbsp;
-    						<a class="the-social-links tsl-<?php echo $settings['style'];?> tsl-<?php echo $settings['size'] ;?> tsl-<?php echo $settings['style_pack'];?> tsl-<?php echo $network;?>" target="<?php echo $settings['target'] ;?>" alt="<?php echo $this->social_networks[$network];?>" title="<?php echo $this->social_networks[$network];?>"><i class="fa fa-<?php echo $network;?>"></i></a>
+    						<a class="the-social-links tsl-<?php echo $settings['style'];?> tsl-<?php echo $settings['size'] ;?> tsl-<?php echo $settings['style_pack'];?> tsl-<?php echo $network;?>" alt="<?php echo $this->social_networks[$network];?>" title="<?php echo $this->social_networks[$network];?>"><i class="fa fa-<?php echo $network;?>"></i></a>
     						<input placeholder="<?php echo $this->social_networks[$network];?> <?php _e( 'URL', 'the-social-links' );?>" type="text" name="the_social_links_settings[links][][<?php echo $network;?>]" value="<?php echo $value;?>" />
     					</li>
 
