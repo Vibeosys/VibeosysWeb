@@ -2988,10 +2988,18 @@ width: -webkit-calc(100% / 4);
 .footer-widget ul {
 	margin-left: 0;
 	padding-left: 0;
+        
 }
 .footer-widget li {
 	list-style: none;
 	margin-left: 0;
+}
+.footer-widget li > a{
+color: #939393;
+}
+.footer-widget li > a:hover{
+    color: #E96656;
+    font-weight: bold;
 }
 .footer-widget-wrap {
 	background: rgba(255,255,255,0.05);

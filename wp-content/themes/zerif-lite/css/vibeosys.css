@@ -113,12 +113,14 @@ h3.uris-slider-title{
     min-width: 250px;
 }
 .side-header{
-    background-color: gainsboro;
+    //background-color: gainsboro;
     width: 100%;
     height: auto;
     text-align: center;
     padding: 10px;
+    padding-top: 1px;
     margin-top: 20px;
+    border-bottom: 2px solid #13078C;
  }
  
 .side-header h2{
@@ -141,6 +143,11 @@ h3.uris-slider-title{
 .page-details,.page-head h2{
     font-size: 17px;
     text-height: font-size;
+}
+.page-head h3{
+     font-size: 15px;
+    text-height: font-size;
+    font-weight: bold;
 }
 .page-details{
     
@@ -177,13 +184,12 @@ div.career-header.page-head{
     position: relative;
     top:-10px;
     left: -10px;
+    border: 2px solid gainsboro;
 }
 .job-header > i{
     float: right;
 }
-.social-link{
-    margin-left: 25px;
-}
+
 
 .image-container{
     min-width: 300px;
@@ -247,4 +253,15 @@ input[type="text"]:focus{
     border-radius: 50%;
     //border: 2px solid black;
     margin-left: 36%;
+}
+
+// style for management team page
+div.social-link{
+    padding-left: 30%;
+    width:50%;
+}
+
+//for footer menu
+ul.menu{
+    color: lightskyblue;
 }

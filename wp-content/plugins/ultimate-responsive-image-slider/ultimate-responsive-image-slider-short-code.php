@@ -160,7 +160,7 @@ function ResponsiveWWRISroShortCode( $Id ) {
 	 */
 	require("uris-layout.php");
 	?>
-	<div style="display:none">Ultimate Responsive Image Slider Plugin Powered By Weblizar</div>
+	
 	<?php
 	wp_reset_query();
     return ob_get_clean();

@@ -95,7 +95,7 @@ wp_head(); ?>
 
 						echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand">';
 
-							echo '<img src="'.$zerif_logo.'" alt="'.get_bloginfo('title').'">';
+							echo '<img src="../wp-content/uploads/2015/12/png-logo.png" alt="'.get_bloginfo('title').'">';
 
 						echo '</a>';
 

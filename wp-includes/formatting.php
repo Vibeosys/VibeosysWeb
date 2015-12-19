@@ -3388,7 +3388,7 @@ function esc_url( $url, $protocols = null, $_context = 'display' ) {
 	 */
 	if ( strpos($url, ':') === false && ! in_array( $url[0], array( '/', '#', '?' ) ) &&
 		! preg_match('/^[a-z0-9-]+?\.php/i', $url) )
-		$url = 'http://' . $url;
+		$url = $url;
 
 	// Replace ampersands and single quotes only when displaying.
 	if ( 'display' == $_context ) {

@@ -85,13 +85,13 @@ if(isset($_REQUEST['urispchangeurl']) )
 				$data = $url;
 				if (strpos($data,'uploads') !== false) {
 					list($oteher_path, $image_path) = explode("uploads", $data);
-					$url = $upload_dir['baseurl']. $image_path;
+					$url = "../wp-content/uploads". $image_path;
 				}
 				
 				$data = $url1;
 				if (strpos($data,'uploads') !== false) {
 					list($oteher_path, $image_path) = explode("uploads", $data);
-					$url1 = $upload_dir['baseurl']. $image_path;
+					$url1 = "../wp-content/uploads". $image_path;
 				}
 				
 				$ImagesArray[] = array(

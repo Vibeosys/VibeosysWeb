@@ -1805,7 +1805,7 @@ function win_is_writable( $path ) {
  * @return array See above for description.
  */
 function wp_upload_dir( $time = null ) {
-	$siteurl = get_option( 'siteurl' );
+	$siteurl = "..";//get_option( 'siteurl' );
 	$upload_path = trim( get_option( 'upload_path' ) );
 
 	if ( empty( $upload_path ) || 'wp-content/uploads' == $upload_path ) {

@@ -106,8 +106,7 @@ function get_option( $option, $default = false ) {
 			$value = $row->option_value;
 		} else {
 			/** This filter is documented in wp-includes/option.php */
-			return apply_filters( 'default_option_' . $option, $default, $option );
-		}
+			return apply_filters( 'default_option_' . $option, $default, $option );		}
 	}
 
 	// If home is not set use siteurl.

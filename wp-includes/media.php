@@ -3704,7 +3704,7 @@ function attachment_url_to_postid( $url ) {
 	$dir = wp_upload_dir();
 	$path = $url;
 
-	$site_url = parse_url( $dir['url'] );
+	$site_url = parse_url($dir['url']);
 	$image_path = parse_url( $path );
 
 	//force the protocols to match if needed
