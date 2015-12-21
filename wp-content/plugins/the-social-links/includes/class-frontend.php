@@ -46,7 +46,7 @@ class The_Social_Links_Frontend{
                     $value = $value;
                 endforeach;
 
-                $output .= '<a href="' .  $value . '" class="the-social-links tsl-' .   $settings['style'] . ' tsl-' .  $settings['size'] . ' tsl-' . $settings['style_pack'] . ' tsl-' . $network . '" target="' . $settings['target'] .'" alt="' . $tsl->social_networks[$network] . '" title="follow bhupendra on ' . $tsl->social_networks[$network] . '"><i class="fa fa-' . $network . '"></i></a>&nbsp;';
+                $output .= '<a href="' .  $value . '" class="the-social-links tsl-' .   $settings['style'] . ' tsl-' .  $settings['size'] . ' tsl-' . $settings['style_pack'] . ' tsl-' . $network . '" target="' . $settings['target'] .'" alt="' . $tsl->social_networks[$network] . '" title="follow bhupendra on ' . $tsl->social_networks[$network] . '"><i class="fa-small fa-' . $network . '"></i></a>&nbsp;';
 
             endforeach;
 

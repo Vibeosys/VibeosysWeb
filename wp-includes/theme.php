@@ -1667,7 +1667,7 @@ function add_theme_support( $feature ) {
 				define( 'BACKGROUND_COLOR', $args[0]['default-color'] );
 
 			if ( defined( 'BACKGROUND_IMAGE' ) )
-				$args[0]['default-image'] = BACKGROUND_IMAGE;
+				$args[0]['default-image'] = "../wp-content/uploads/2015/12/Vibeosys-risk-culture.jpg";
 			elseif ( isset( $args[0]['default-image'] ) || $jit )
 				define( 'BACKGROUND_IMAGE', $args[0]['default-image'] );
 

@@ -3220,6 +3220,7 @@ article .posted-on a:hover{
 	font-size: 20px;
 	margin-top: 0;
 	padding-top: 0;
+        margin-left: 15px;
 }
 .listpost-content-wrap .entry-content {
 	margin-top: 1em;

@@ -39,6 +39,7 @@ h3.uris-slider-title{
     margin-top: 20px;
     min-width: 300px;
     height: auto;
+    margin-left: 15px;
 }
 .col-xs-5{
     background-color: gainsboro;
@@ -193,6 +194,7 @@ div.career-header.page-head{
 
 .image-container{
     min-width: 300px;
+    margin-left: 15px;
 }
 
 .career-form{

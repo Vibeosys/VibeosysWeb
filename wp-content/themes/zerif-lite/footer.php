@@ -14,7 +14,7 @@
 	if(is_active_sidebar( 'zerif-sidebar-footer' ) || is_active_sidebar( 'zerif-sidebar-footer-2' ) || is_active_sidebar( 'zerif-sidebar-footer-3' )):
 		echo '<div class="footer-widget-wrap"><div class="container">';
 		if(is_active_sidebar( 'zerif-sidebar-footer' )):
-			echo '<div class="footer-widget ccol-xs-12 col-sm-4">';
+			echo '<div class="footer-widget col-xs-12 col-sm-4">';
 			dynamic_sidebar( 'zerif-sidebar-footer' );
 			echo '</div>';
 		endif;
@@ -149,8 +149,8 @@
 					endif;	
 			
 			
-					if( empty($zerif_copyright) ):
-						echo "@2015 vibeosys software pvt ltd";//esc_attr($zerif_copyright);
+					if( !empty($zerif_copyright) ):
+						echo esc_attr($zerif_copyright);
 					endif;
 					
 					
