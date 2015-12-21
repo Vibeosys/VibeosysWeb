@@ -17,7 +17,7 @@
 			echo '<div class="footer-widget ccol-xs-12 col-sm-4">';
 			dynamic_sidebar( 'zerif-sidebar-footer' );
 			echo '</div>';
-		endif;/*
+		endif;
 		if(is_active_sidebar( 'zerif-sidebar-footer-2' )):
 			echo '<div class="footer-widget col-xs-12 col-sm-4">';
 			dynamic_sidebar( 'zerif-sidebar-footer-2' );
@@ -27,7 +27,7 @@
 			echo '<div class="footer-widget col-xs-12 col-sm-4">';
 			dynamic_sidebar( 'zerif-sidebar-footer-3' );
 			echo '</div>';
-		endif;*/
+		endif;
 		echo '</div></div>';
 	endif;
 ?>
@@ -125,7 +125,7 @@
 		
 					echo '<div class="'.$footer_class.' copyright">';
 					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
-                                            echo '<div class="col-md-4">';
+                                            
                                             echo '<ul class="social">';
 						
 						/* facebook */
@@ -144,22 +144,13 @@
 						if( !empty($zerif_socials_behance) ):
 							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_behance).'" title="follow us on google+"><i class="fa fa-google-plus"></i></a></li>';
 						endif;
-						echo '</ul></div>';
-                                                if(is_active_sidebar( 'zerif-sidebar-footer-2' )):
-                                                    echo '<div class="footer-widget  col-md-4">';
-                                                    dynamic_sidebar( 'zerif-sidebar-footer-2' );
-                                                    echo '</div>';
-                                                endif;
-                                                if(is_active_sidebar( 'zerif-sidebar-footer-3' )):
-                                                       echo '<div class="footer-widget col-md-4">';
-                                                        dynamic_sidebar( 'zerif-sidebar-footer-3' );
-                                                        echo '</div>';
-                                                endif;
+						echo '</ul>';
+                                               
 					endif;	
 			
 			
-					if( !empty($zerif_copyright) ):
-						echo esc_attr($zerif_copyright);
+					if( empty($zerif_copyright) ):
+						echo "@2015 vibeosys software pvt ltd";//esc_attr($zerif_copyright);
 					endif;
 					
 					

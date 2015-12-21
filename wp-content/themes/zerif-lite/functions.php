@@ -44,8 +44,8 @@ function zerif_setup() {
 
     /* Setup the WordPress core custom background feature. */
     add_theme_support('custom-background', apply_filters('zerif_custom_background_args', array(
-        'default-color' => 'ffffff',
-        'default-image' => get_stylesheet_directory_uri() . "/images/bg.jpg",
+        'default-color' => 'ccc',
+        'default-image' => "../wp-content/uploads/2015/12/Vibeosys-risk-culture.jpg",
     )));
 
     /* Enable support for HTML5 markup. */
@@ -128,8 +128,8 @@ function zerif_widgets_init() {
         'id' => 'sidebar-1',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
+        'before_title' => '<p class="widget-title">',
+        'after_title' => '</p>',
     ));
 
     register_sidebar(array(
@@ -137,8 +137,8 @@ function zerif_widgets_init() {
         'id' => 'sidebar-aboutus',
         'before_widget' => '',
         'after_widget' => '',
-        'before_title' => '<h1 class="widget-title">',
-        'after_title' => '</h1>',
+        'before_title' => '<p class="widget-title">',
+        'after_title' => '</p>',
     ));
 
     register_sidebars( 
@@ -148,8 +148,8 @@ function zerif_widgets_init() {
             'id'            => 'zerif-sidebar-footer',
             'before_widget' => '<aside id="%1$s" class="widget footer-widget-footer %2$s">',
             'after_widget'  => '</aside>',
-            'before_title'  => '<h1 class="widget-title">',
-            'after_title'   => '</h1>'
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>'
         ) 
     );
     
