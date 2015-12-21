@@ -2959,6 +2959,7 @@ width: -webkit-calc(100% / 4);
 	padding-bottom: 68px;
 	background: transparent;
         font-size: 14px;
+        color: #897E7E;
 }
 .social {
 	margin: 0 0 1.5em 0 !important;
@@ -2976,7 +2977,7 @@ width: -webkit-calc(100% / 4);
 }
 .copyright p {
 	margin-bottom: 0;
-	color: #939393;
+	color: #897E7E;
 }
 .footer-widget-wrap > .container {
 	text-align: center;
