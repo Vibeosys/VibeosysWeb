@@ -211,7 +211,7 @@ $j = 1;
 <?php echo $WRIS_L3_Custom_CSS; ?>
 </style>
 <?php  if($WRIS_L3_Slide_Title == 1) { ?>
-<h3 class="uris-slider-title"><?php echo get_the_title( $post_id ); ?> </h3>
+<!--<h3 class="uris-slider-title"><?php //echo get_the_title( $post_id ); ?> </h3>-->
 <?php } ?>
 <div id="example3_<?php echo $post_id; ?>" class="slider-pro">
 	<!---- slides div start ---->
