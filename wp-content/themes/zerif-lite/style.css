@@ -611,7 +611,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] 
-input[type="number"],
+input[type="number"]
 {
 	padding: 3px;
 }
@@ -634,7 +634,7 @@ textarea {
 	background: #0074c2;
 }
 .input-box {
-	border: 0 !important;
+	//border: 0 !important;
 	width: 274px;
 	text-align: left;
 	text-transform: none;
