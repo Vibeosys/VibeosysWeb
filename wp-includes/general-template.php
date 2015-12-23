@@ -708,6 +708,34 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
 				$output = 'ltr';
 			}
 			break;
+                case 'Careers':
+			$output = "Vibeosys Software pvt Ltd | Jobs at Vibeosys";
+			break;
+                case 'Mobile Development':
+			$output = "Vibeosys Software pvt Ltd | Mobile Development and Mobility Solutions";
+			break;
+                case 'Web Development':
+			$output = "Vibeosys Software pvt Ltd | OpenSource Technologies";
+			break;
+                case 'Openstack Development':
+			$output = "Vibeosys Software pvt Ltd | Linux, Ubantu, Administration ";
+			break;
+                case 'Sales':
+			$output = "Vibeosys Software pvt Ltd | Sales & Marketing IT Services |"
+                        . " Enterprise IT Solution, Application Services & Technology Consulting";
+			break;
+                case 'Company Overview':
+			$output = "Vibeosys Software pvt Ltd | About Us";
+			break;
+                case 'Management Team':
+			$output = "Vibeosys Software pvt Ltd";
+			break;
+                case 'Apply':
+			$output = "Vibeosys Software pvt Ltd | Career & Job Application";
+			break;
+                case 'Safar Ka Sathi – Mobile Travel App':
+			$output = "Vibeosys Software pvt Ltd";
+			break;
 		case 'name':
 		default:
 			$output = get_option('blogname');
@@ -907,7 +935,11 @@ function wp_get_document_title() {
 	if ( is_home() && is_front_page() ) {
 		$title['tagline'] = get_bloginfo( 'description', 'display' );
 	} else {
-		$title['site'] = get_bloginfo( 'name', 'display' );
+            //if($title['title']=="Careers"){
+		$title['site'] = get_bloginfo( $title['title'], 'display' );
+           // }  else {
+              //  $title['site'] = get_bloginfo( 'name', 'display' );
+            //}
 	}
 
 	/**
@@ -917,7 +949,7 @@ function wp_get_document_title() {
 	 *
 	 * @param string $sep Document title separator. Default '-'.
 	 */
-	$sep = apply_filters( 'document_title_separator', '-' );
+	$sep = apply_filters( 'document_title_separator', '|' );
 
 	/**
 	 * Filter the parts of the document title.

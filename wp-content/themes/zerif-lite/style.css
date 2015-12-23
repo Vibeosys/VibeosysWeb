@@ -5834,7 +5834,11 @@ body.custom-background {
 	}
 	.navbar-inverse .navbar-nav li.this-open > ul {
 		display: block !important;
+                
 	}
+        #menu-item-245,#menu-item-249{
+            padding-top: 10px;
+        }
 	.navbar-inverse .navbar-nav ul.sub-menu li {
 		width: 100%;
 		float: left;
@@ -5842,7 +5846,7 @@ body.custom-background {
 	.navbar-inverse .navbar-nav ul.sub-menu li a {
 		width: 100%;
 		float: left;
-		padding: 8px 25px 8px 0;
+		padding: 0px 25px 8px 0;
 		border-bottom: 1px solid #EDEDED;
 	}
 	.navbar-inverse .navbar-nav ul.sub-menu li:last-child a {
@@ -5867,7 +5871,7 @@ body.custom-background {
 		padding-left: 20px;
 	}
 	.navbar-inverse .navbar-nav ul.sub-menu li {
-		padding-bottom: 0;
+		//padding-bottom: 0;
 		padding-top: 0;
 	}
 	.dropdownmenu {
