@@ -6317,3 +6317,6 @@ body.custom-background {
     
 }
 
+.has_children:hover{
+    cursor: pointer;
+}

@@ -44,12 +44,20 @@ var callback_mobile_dropdown = function () {
             jQuery(this).parent('li').addClass('this-open');
         }
     });
-
+    jQuery('.has_children > a').click(function(){
+        if( jQuery(this).parent('li').hasClass('this-open') ){
+            jQuery(this).parent('li').removeClass('this-open');
+        }else{
+            jQuery(this).parent('li').addClass('this-open');
+        }
+    });
+    
+ /*
     navLi.find('a').click(function(){
         jQuery('.navbar-toggle').addClass('collapsed');
         jQuery('.collapse').removeClass('in');
     });
-
+*/
 };
 jQuery(document).ready(callback_mobile_dropdown);
 

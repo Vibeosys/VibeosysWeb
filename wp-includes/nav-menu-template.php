@@ -108,7 +108,8 @@ class Walker_Nav_Menu extends Walker {
 		 * @param int    $depth   Depth of menu item. Used for padding.
 		 */
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
-		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+		
+                $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
 		/**
 		 * Filter the ID applied to a menu item's list item element.
@@ -123,7 +124,8 @@ class Walker_Nav_Menu extends Walker {
 		 */
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
 		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
-
+                  
+                
 		$output .= $indent . '<li' . $id . $class_names .'>';
 
 		$atts = array();
@@ -176,7 +178,8 @@ class Walker_Nav_Menu extends Walker {
 		$title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
 
 		$item_output = $args->before;
-		$item_output .= '<a'. $attributes .'>';
+		$item_output .= '<a id ="'.$title .'"'. $attributes.'>';
+              
 		$item_output .= $args->link_before . $title . $args->link_after;
 		$item_output .= '</a>';
 		$item_output .= $args->after;
