@@ -715,10 +715,10 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
 			$output = "Vibeosys Software pvt Ltd | Mobile Development and Mobility Solutions";
 			break;
                 case 'Web Development':
-			$output = "Vibeosys Software pvt Ltd | OpenSource Technologies";
+			$output = "Vibeosys Software pvt Ltd | Website Development, Web Services";
 			break;
                 case 'Openstack Development':
-			$output = "Vibeosys Software pvt Ltd | Linux, Ubantu, Administration ";
+			$output = "Vibeosys Software pvt Ltd | Linux, Ubantu, Administration, OpenSource Technologies ";
 			break;
                 case 'Sales':
 			$output = "Vibeosys Software pvt Ltd | Sales & Marketing IT Services |"
