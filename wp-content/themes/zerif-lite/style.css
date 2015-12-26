@@ -825,6 +825,10 @@ a:active {
 	display: block;
 	margin: 0 auto;
 }
+.header{
+    //opacity: 0.9;
+    //z-index: 1000;
+}
  /*---------------------------------------
  **   8.0 Clearings                   -----
 -----------------------------------------*/
@@ -1455,6 +1459,7 @@ object {
 	z-index: 1000;
 	min-height: 75px;
 	margin-bottom: 0;
+        opacity: 0.8;
 }
 #main-nav.fixed {
 	position: fixed;
