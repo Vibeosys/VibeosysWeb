@@ -720,7 +720,7 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
                 case 'Openstack Development':
 			$output = "Vibeosys Software pvt Ltd | Linux Administration, Ubuntu Administration, OpenSource Technologies ";
 			break;
-                case 'Mobile Development':
+                case 'Microsoft Development':
 			$output = "Vibeosys Software pvt Ltd | Windows Development";
 			break;
                 case 'Sales':
