@@ -80,13 +80,27 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 			if(trim($_POST['mysubject']) === ''):
 
-				$subjectError = __('* Please enter a subject.','zerif-lite');
+				$subjectError = __('* Please enter a Mobile No.','zerif-lite');
 
 				$hasError = true;
 
 			else:
 
 				$subject = trim($_POST['mysubject']);
+
+			endif;
+                        
+                        /* Location */
+
+			if(trim($_POST['mylocation']) === ''):
+
+				$locationError = __('* Please enter a location.','zerif-lite');
+
+				$hasError = true;
+
+			else:
+
+				$location_country = trim($_POST['mylocation']);
 
 			endif;
 
@@ -126,7 +140,37 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						$subject = 'From '.$name;
 					endif;
 
-					$body = "Name: $name \n\nEmail: $email \n\n Subject: $subject \n\n Message: $message";
+					$body = '
+                                                    <style>
+                                                    tr, td{
+                                                    border:0px solid black;
+                                                    }
+                                                    </style>
+                                                        <table border="0" class=" aligncenter" width="322" rules="all" cellpadding="10">
+                                                        <thead style ="text-align:center;background-color:gray" ><th colspan="2" style ="text-align:center;color:white">SALES INQUIRY</th></thead>
+                                                        <tbody style ="border:0px">
+                                                        <tr>
+                                                        <td><strong>Name: </strong></td>
+                                                        <td>'.$name.'</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td><strong>Email: </strong></td>
+                                                        <td>'.$email.'</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td><strong>Contact No: </strong></td>
+                                                        <td>'.$subject.'</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td><strong>Location: </strong></td>
+                                                        <td>'.$location_country.'</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td><strong>Message: </strong></td>
+                                                        <td>'.$message.'</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        </table>';
 
 					/* FIXED HEADERS FOR EMAIL NOT GOING TO SPAM */
 					$zerif_admin_email = get_option( 'admin_email' );
@@ -150,7 +194,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						$headers = 'From: '.$name.' <wordpress@'.$zerif_sitename.'>' . "\r\n" . 'Reply-To: ' . $email;
 						
 					}
-
+                                        $subject = "Get-In-Touch Sales Inquiry";
 					wp_mail($emailTo, $subject, $body, $headers);
 
 					$emailSent = true;
@@ -304,6 +348,12 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 								echo '<div class="notification error"><p>'.esc_html($subjectError).'</p></div>';
 
 							endif;
+                                                        
+                                                        if(isset($locationError) && $locationError != '') :
+
+								echo '<div class="notification error"><p>'.esc_html($locationError).'</p></div>';
+
+							endif;
 
 							if(isset($messageError) && $messageError != '') :
 
@@ -319,19 +369,24 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 								<input type="hidden" name="submitted" id="submitted" value="true" />
 
-								<div class="col-lg-4 col-sm-4 zerif-rtl-contact-name" data-scrollreveal="enter left after 0s over 1s">
+								<div class="col-lg-6 col-sm-6 zerif-rtl-contact-name" data-scrollreveal="enter left after 0s over 1s">
 									<label for="myname" class="screen-reader-text"><?php _e( 'Your Name', 'zerif-lite' ); ?></label>
 									<input required="required" type="text" name="myname" id="myname" placeholder="<?php _e('Your Name','zerif-lite'); ?>" class="form-control input-box" value="<?php if(isset($_POST['myname'])) echo esc_attr($_POST['myname']);?>">
 								</div>
 
-								<div class="col-lg-4 col-sm-4 zerif-rtl-contact-email" data-scrollreveal="enter left after 0s over 1s">
+								<div class="col-lg-6 col-sm-6 zerif-rtl-contact-email" data-scrollreveal="enter left after 0s over 1s">
 									<label for="myemail" class="screen-reader-text"><?php _e( 'Your Email', 'zerif-lite' ); ?></label>
 									<input required="required" type="email" name="myemail" id="myemail" placeholder="<?php _e('Your Email','zerif-lite'); ?>" class="form-control input-box" value="<?php if(isset($_POST['myemail'])) echo is_email($_POST['myemail']) ? $_POST['myemail'] : ""; ?>">
 								</div>
 
-								<div class="col-lg-4 col-sm-4 zerif-rtl-contact-subject" data-scrollreveal="enter left after 0s over 1s">
-									<label for="mysubject" class="screen-reader-text"><?php _e( 'Subject', 'zerif-lite' ); ?></label>
-									<input required="required" type="text" name="mysubject" id="mysubject" placeholder="<?php _e('Subject','zerif-lite'); ?>" class="form-control input-box" value="<?php if(isset($_POST['mysubject'])) echo esc_attr($_POST['mysubject']);?>">
+								<div class="col-lg-6 col-sm-6 zerif-rtl-contact-subject" data-scrollreveal="enter left after 0s over 1s">
+									<label for="mysubject" class="screen-reader-text"><?php _e( 'Mobile No.', 'zerif-lite' ); ?></label>
+									<input required="required" type="text" name="mysubject" id="mysubject" placeholder="<?php _e('Mobile No.','zerif-lite'); ?>" class="form-control input-box" value="<?php if(isset($_POST['mysubject'])) echo esc_attr($_POST['mysubject']);?>">
+								</div>
+                                                                
+                                                                <div class="col-lg-6 col-sm-6 zerif-rtl-contact-location" data-scrollreveal="enter left after 0s over 1s">
+									<label for="mylocation" class="screen-reader-text"><?php _e( 'Location', 'zerif-lite' ); ?></label>
+									<input required="required" type="text" name="mylocation" id="mylocation" placeholder="<?php _e('Location','zerif-lite'); ?>" class="form-control input-box" value="<?php if(isset($_POST['mylocation'])) echo esc_attr($_POST['mylocation']);?>">
 								</div>
 
 								<div class="col-lg-12 col-sm-12" data-scrollreveal="enter right after 0s over 1s">
