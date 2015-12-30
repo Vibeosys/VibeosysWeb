@@ -140,37 +140,47 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						$subject = 'From '.$name;
 					endif;
 
-					$body = '
-                                                    <style>
+					$body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                                                 <html>
+                                                 <head>
+                                                 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+                                                 <title>HTML Email</title>
+                                                 <style>
                                                     tr, td{
                                                     border:0px solid black;
                                                     }
-                                                    </style>
-                                                        <table border="0" class=" aligncenter" width="322" rules="all" cellpadding="10">
-                                                        <thead style ="text-align:center;background-color:gray" ><th colspan="2" style ="text-align:center;color:white">SALES INQUIRY</th></thead>
-                                                        <tbody style ="border:0px">
-                                                        <tr>
-                                                        <td><strong>Name: </strong></td>
-                                                        <td>'.$name.'</td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>Email: </strong></td>
-                                                        <td>'.$email.'</td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>Contact No: </strong></td>
-                                                        <td>'.$subject.'</td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>Location: </strong></td>
-                                                        <td>'.$location_country.'</td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>Message: </strong></td>
-                                                        <td>'.$message.'</td>
-                                                        </tr>
-                                                        </tbody>
-                                                        </table>';
+                                                 </style>
+                                                 </head>
+                                                 <body><table rules="all" style="border-color: #666;" cellpadding="10">'."\n";
+                                        $body .='<table border="0" class=" aligncenter" width="322" rules="all" cellpadding="10">
+<thead style ="text-align:center;background-color:gray" ><th colspan="2" style ="text-align:center;color:white">SALES INQUIRY</th></thead>
+<tbody style ="border:0px">
+<tr>
+<td><strong>Name: </strong></td>
+<td>'.$name.'</td>
+</tr>
+<tr>
+<td><strong>Email: </strong></td>
+<td>'.$email.'</td>
+</tr>
+<tr>
+<td><strong>Contact No: </strong></td>
+<td>'.$subject.'</td>
+</tr>
+<tr>
+<td><strong>Location: </strong></td>
+<td>'.$location_country.'</td>
+</tr>
+<tr>
+<td><strong>Message: </strong></td>
+<td>'.$message.'</td>
+</tr>
+</tbody>
+</table></body></html>';
+                                                
+                                                
+                                                
+                                                
 
 					/* FIXED HEADERS FOR EMAIL NOT GOING TO SPAM */
 					$zerif_admin_email = get_option( 'admin_email' );
@@ -183,7 +193,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 					
 					if ( zerif_is_localhost() ) {
 					
-						$headers = 'From: '.$name.' <'.$zerif_admin_email.'>' . "\r\n" . 'Reply-To: ' . $email;
+						$headers = 'From: '.$name.' <'.$zerif_admin_email.'>' . "\r\n" . 'Reply-To: ' . $email. "\r\n";
 						
 					} else {
 					
@@ -191,10 +201,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 							$zerif_sitename = substr( $zerif_sitename, 4 );
 						}
 						
-						$headers = 'From: '.$name.' <wordpress@'.$zerif_sitename.'>' . "\r\n" . 'Reply-To: ' . $email;
+						$headers = 'From: '.$name.' <wordpress@'.$zerif_sitename.'>' . "\r\n" . 'Reply-To: ' . $email. "\r\n";
 						
 					}
                                         $subject = "Get-In-Touch Sales Inquiry";
+                                        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 					wp_mail($emailTo, $subject, $body, $headers);
 
 					$emailSent = true;
