@@ -724,8 +724,8 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
 			$output = "Vibeosys Software pvt Ltd | Windows Development";
 			break;
                 case 'Sales':
-			$output = "Vibeosys Software pvt Ltd | Sales & Marketing IT Services |"
-                        . " Enterprise IT Solution, Application Services & Technology Consulting";
+			$output = "Vibeosys Software pvt Ltd | Sales and Marketing IT Services |"
+                        . " Enterprise IT Solution, Application Services and Technology Consulting";
 			break;
                 case 'Company Overview':
 			$output = "Vibeosys Software pvt Ltd | About Us";
@@ -734,7 +734,7 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
 			$output = "Vibeosys Software pvt Ltd";
 			break;
                 case 'Apply':
-			$output = "Vibeosys Software pvt Ltd | Career & Job Application";
+			$output = "Vibeosys Software pvt Ltd | Career and Job Application";
 			break;
                 case 'Safar Ka Sathi – Mobile Travel App':
 			$output = "Vibeosys Software pvt Ltd";
