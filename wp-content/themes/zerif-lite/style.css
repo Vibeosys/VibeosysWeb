@@ -550,6 +550,9 @@ input[type="submit"] {
 	color: #FFF;
         //width: 200px;
 }
+input[type="submit"].no-left-margin{
+    margin-left: 0px;
+}
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -6394,5 +6397,7 @@ body.custom-background {
   transition:padding 0.5s linear;  
 }
 
-//social icon style
+//visual form builder
+
+
 
