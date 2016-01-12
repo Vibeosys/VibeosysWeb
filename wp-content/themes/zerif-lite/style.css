@@ -1417,7 +1417,7 @@ object {
 	position: relative;
 	-webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
-	padding: 285px 0 210px;
+	padding: 200px 0 200px;
 }
 .header_title {
     float: left;
@@ -1460,6 +1460,7 @@ object {
 	min-height: 75px;
 	margin-bottom: 0;
         opacity: 0.8;
+        
 }
 #main-nav.fixed {
 	position: fixed;
@@ -1554,6 +1555,7 @@ object {
 }
 .navbar-brand > img {
 	max-height: 100%;
+        min-height: 50%;
 }
 .navbar-brand:focus {
 	border:1px dotted black;
@@ -1628,17 +1630,20 @@ ul.nav > li.menu-item-home > a:before {
 	content: "";
 	display: none;
 }
-li.current>a:before {
+
+ul#menu-site-menu > li.current>a:before {
 	position: absolute;
 	margin: auto;
 	z-index: 1;
 	content: "";
-	width: 75%;
+	width: 100%;
 	height: 2px;
 	background: #e96656;
 	bottom: 0px;
-	left: 12.5%;
+	//left: 12.5%;
 }
+
+
 ul.nav > li.current_page_item > a:before, ul.nav > li.current-menu-item > a:before {
 	position: absolute;
 	margin: auto;
@@ -1667,7 +1672,17 @@ ul.nav > li.current_page_item.current > a:before {
 	left: 12.5%;
 	display: block;
 }
-
+ ul.sub-menu > li.current>a:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: #e96656;
+	bottom: 0px;
+	//left: 12.5%;
+}
 
 /*----  SECTION:  HOME > INTRO AND SHORT MSGS   ----*/
 .intro {
@@ -2969,6 +2984,37 @@ width: -webkit-calc(100% / 4);
 .social {
 	margin: 0 0 1.5em 0 !important;
 }
+ul.social > li > a > div.social-icon-div{
+    //position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-top: 20%;
+    border: 2px solid #939393;//#e96656;
+}
+ul.social > li > a > div.social-icon-div.fb:hover{
+    background: #3B5998;  
+    border: 0px solid #e96656;
+}
+
+ul.social > li > a > div.social-icon-div.tw:hover{
+    background: #55ACEE;  
+    border: 0px solid #e96656;
+}
+
+ul.social > li > a > div.social-icon-div.li:hover{
+    background: #0976B4;  
+    border: 0px solid #e96656;
+}
+
+ul.social > li > a > div.social-icon-div.gp:hover{
+    background: #DD4B39;  
+    border: 0px solid #e96656;
+}
 .social li {
 	display: inline-block;
 	margin: 10px;
@@ -2978,7 +3024,7 @@ width: -webkit-calc(100% / 4);
 	font-size: 18px;
 }
 .social li a:hover {
-	color: #e96656;
+	color: white;
 }
 .copyright p {
 	margin-bottom: 0;
@@ -3016,7 +3062,7 @@ color: #897E7E;
 	color: #897E7E;	
 }
 .footer-widget-wrap .widget li a {
-	color: #897E7E;
+	color: #939393;
 }
 .footer-widget-wrap .widget li a:hover {
 	color: #FFF;
@@ -3024,6 +3070,8 @@ color: #897E7E;
 .footer-widget-wrap .widget {
 	color: #CCC;
 	padding-bottom: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
 }
 .footer-widget-wrap .widget_calendar tbody td {
     background-color: rgba(249, 249, 249, 0.75);
@@ -3192,7 +3240,7 @@ article .posted-on a:hover{
 	content: "";
 	width: 10%;
 	height: 2px;
-	background: #13078C;
+	background: #e96656;
 	bottom: -9px;
 	left: 0;
 }
@@ -3203,7 +3251,7 @@ article .posted-on a:hover{
 	content: "";
 	width: 35%;
 	height: 2px;
-	background: #13078C;
+	background: #e96656;
 	bottom: -9px;
 	left: 0;
 	width: 50px;
@@ -4518,6 +4566,7 @@ article .posted-on a:hover{
 	.menu-align-center .responsive-logo > a {
 		float: left;
 	}
+      
 }
 @media (max-width: 600px) {
 
@@ -4552,6 +4601,8 @@ article .posted-on a:hover{
 	.entry-footer-large {
 		padding-right: 0;
 	}
+        
+       
 }
 @media (max-width: 480px) {
 
@@ -4686,6 +4737,10 @@ article .posted-on a:hover{
 	.woocommerce-page .upsells.products ul.products li.product{
 		width: 100%;
 	}
+        
+        #main-nav{
+            position: fixed;
+        }
 
 }
 /* [end] woocommerce */
@@ -5806,10 +5861,7 @@ body.custom-background {
 	#main-nav {
 		overflow: visible;
 	}
-	#main-nav,
-	#main-nav.fixed {
-		position: relative;
-	}
+	
 	.navbar-inverse .navbar-nav {
 		padding-left: 10px;
 		line-height: normal;
@@ -5867,7 +5919,7 @@ body.custom-background {
 	}
 	#main-nav,
 	#main-nav.fixed {
-		position: relative;
+		position: fixed;
 	}
 	.navbar-collapse {
 		max-height: 100%;
@@ -6116,9 +6168,7 @@ body.custom-background {
 	header.header {
 	    min-height: 0 !important;
 	}
-	#main-nav {
-    	position: relative;
-	}
+	
 	.header-content-wrap {
 		padding: 30px 0 15px;
 	}
@@ -6325,3 +6375,24 @@ body.custom-background {
 .has_children:hover{
     cursor: pointer;
 }
+
+.affix {
+  padding:0px;
+  -webkit-transition:padding 0.1s linear;
+  -moz-transition:padding 0.1s linear;  
+  -o-transition:padding 0.1s linear;         
+  transition:padding 0.1s linear;  
+
+}
+
+.affix-top {
+  padding-top:15px;
+  padding-bottom:15px;
+  -webkit-transition:padding 0.5s linear;
+  -moz-transition:padding 0.5s linear;  
+  -o-transition:padding 0.5s linear;         
+  transition:padding 0.5s linear;  
+}
+
+//social icon style
+

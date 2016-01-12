@@ -130,19 +130,19 @@
 						
 						/* facebook */
 						if( !empty($zerif_socials_facebook) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_facebook).'" title="follow us on facebook"><i class="fa fa-facebook"></i></a></li>';
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_facebook).'" title="follow us on facebook"><div class = "social-icon-div fb col-xs-1"><i class="fa fa-facebook"></i></div></a></li>';
 						endif;
 						/* twitter */
 						if( !empty($zerif_socials_twitter) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_twitter).'" title="follow us on twitter"><i class="fa fa-twitter"></i></a></li>';
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_twitter).'" title="follow us on twitter"><div class = "social-icon-div tw col-xs-1"><i class="fa fa-twitter"></i></div></a></li>';
 						endif;
 						/* linkedin */
 						if( !empty($zerif_socials_linkedin) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_linkedin).'" title="follow us on linkedin"><i class="fa fa-linkedin"></i></a></li>';
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_linkedin).'" title="follow us on linkedin"><div class = "social-icon-div li col-xs-1"><i class="fa fa-linkedin"></i></div></a></li>';
 						endif;
 						/* behance */
 						if( !empty($zerif_socials_behance) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_behance).'" title="follow us on google+"><i class="fa fa-google-plus"></i></a></li>';
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_behance).'" title="follow us on google+"><div class = "social-icon-div gp col-xs-1"><i class="fa fa-google-plus"></i></div></a></li>';
 						endif;
 						echo '</ul>';
                                                
