@@ -5716,6 +5716,7 @@ body.home.page {
 body.custom-background {
 	background-position: top center !important;
 	background-attachment: fixed !important;
+        background-size: 100% 100%;
 }
 
 .zerif_team:nth-child(4n+1), .our-team .col-lg-3:nth-child(4n+1) {
