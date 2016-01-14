@@ -8,6 +8,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -69,7 +70,7 @@ wp_head(); ?>
 
 <header id="home" class="header">
 
-	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+	<div id ="main-nav" class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
 
 		<div class="container">
 

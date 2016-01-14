@@ -140,19 +140,14 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						$subject = 'From '.$name;
 					endif;
 
-					$body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-                                                 <html>
-                                                 <head>
-                                                 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-                                                 <title>HTML Email</title>
-                                                 <style>
+					$body = '
+                                                <style>
                                                     tr, td{
                                                     border:0px solid black;
                                                     }
-                                                 </style>
-                                                 </head>
-                                                 <body><table rules="all" style="border-color: #666;" cellpadding="10">'."\n";
-                                        $body .='<table border="0" class=" aligncenter" width="322" rules="all" cellpadding="10">
+                                                 </style> 
+                                                 <table border="0" class=" aligncenter" width="322" rules="all" cellpadding="10">'."\n";
+                                        $body .='
 <thead style ="text-align:center;background-color:gray" ><th colspan="2" style ="text-align:center;color:white">SALES INQUIRY</th></thead>
 <tbody style ="border:0px">
 <tr>
@@ -176,7 +171,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 <td>'.$message.'</td>
 </tr>
 </tbody>
-</table></body></html>';
+</table>';
                                                 
                                                 
                                                 
@@ -205,7 +200,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 						
 					}
                                         $subject = "Get-In-Touch Sales Inquiry";
-                                        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                                        $headers .= "Content-type:text/html/css;charset=UTF-8" . "\r\n";
 					wp_mail($emailTo, $subject, $body, $headers);
 
 					$emailSent = true;

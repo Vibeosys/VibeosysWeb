@@ -7,6 +7,9 @@
 // makes sure the whole site is loaded
 
 jQuery(window).load(function() {
+jQuery('.page_item').addClass('active');
+jQuery('.page_item').parents().addClass('active');
+
 
     // will first fade out the loading animation
 
@@ -21,7 +24,11 @@ jQuery(window).load(function() {
 
     // Focus styles for menus.
     jQuery( '.navbar-collapse' ).find( 'a' ).on( 'focus blur', function() {
-        jQuery( this ).parents().toggleClass( 'link-focus' );
+        //jQuery( this ).parents().toggleClass( 'link-focus' );
+       
+    });
+    jQuery('.menu-item ').on('focus blur', function(){
+        //jQuery( this ).toggleClass('link-focus');
     });
 
 });
@@ -52,12 +59,12 @@ var callback_mobile_dropdown = function () {
         }
     });
     
- /*
+ 
     navLi.find('a').click(function(){
         jQuery('.navbar-toggle').addClass('collapsed');
         jQuery('.collapse').removeClass('in');
     });
-*/
+
 };
 jQuery(document).ready(callback_mobile_dropdown);
 
@@ -67,6 +74,11 @@ jQuery(document).ready(function() {
 
 });
 
+//show menu selection
+jQuery('.sub-menu').click(function(){
+    jQuery('.active').removeClass('active');
+    jQuery('.current_page_item').parents().addClass('active');
+});
 
 /* show/hide reCaptcha */
 jQuery(document).ready(function() {
@@ -176,10 +188,10 @@ jQuery(document).ready(function(){
         var alink   = this;                 // this button pressed
         // check if there is a section that had same id as the button pressed
         if ( jQuery('section [id*=' + idName + ']').length > 0 && jQuery(window).width() >= 751 ){
-            jQuery('.current').removeClass('current');
-            jQuery(alink).parent('li').addClass('current');
+            jQuery('.active').removeClass('active');
+            jQuery(alink).parent('li').addClass('active');
         }else{
-            jQuery('.current').removeClass('current');
+            //jQuery('.active').removeClass('active');
         }
         if ( jQuery(window).width() >= 751 ) {
             headerHeight = jQuery('#main-nav').height();
@@ -201,8 +213,8 @@ jQuery(document).ready(function(){
 
 jQuery(document).ready(function(){
     var headerHeight;
-    jQuery('.current').removeClass('current');
-    jQuery('#site-navigation a[href$="' + window.location.hash + '"]').parent('li').addClass('current');
+   // jQuery('.active').removeClass('active');
+    jQuery('#site-navigation a[href$="' + window.location.hash + '"]').parent('li').addClass('active');
     if ( jQuery(window).width() >= 751 ) {
         headerHeight = jQuery('#main-nav').height();
     } else {
@@ -240,15 +252,16 @@ function zerif_lite_scrolled() {
             // if position of the cursor is inside of the this section
             if ( zerif_scrollTop >= thisBegin && zerif_scrollTop <= thisEnd ) {
                 isInOneSection = 'yes';
-                jQuery('.current').removeClass('current');
-                jQuery('#site-navigation a[href$="' + thisID + '"]').parent('li').addClass('current');    // find the menu button with the same ID section
+                jQuery('.active').removeClass('active');
+                jQuery('#site-navigation a[href$="' + thisID + '"]').parent('li').addClass('active');    // find the menu button with the same ID section
                 return false;
             }
             if (isInOneSection == 'no') {
-                jQuery('.current').removeClass('current');
+                jQuery('.active').removeClass('active');
             }
         });
     }
+    //jQuery('.navbar-brand . img').height('30px');
 }
 jQuery(window).on('scroll',zerif_lite_scrolled);
 

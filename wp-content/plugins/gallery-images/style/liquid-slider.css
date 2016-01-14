@@ -209,3 +209,13 @@
   right: 0;
   z-index: 2;
 }
+
+@media (max-width: 400px) {
+    .ls-wrapper {
+        margin-left: 10%;
+    }
+    #main-header{
+        position: fixed;
+    }
+
+}

@@ -1448,6 +1448,8 @@ object {
 	float: right;
 	margin-right: 0;
 	margin-left: 0;
+        margin-top: 0px;
+        margin: 0px;
 
 }
 .navbar {
@@ -1460,7 +1462,7 @@ object {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	min-height: 75px;
+	min-height: 50px;
 	margin-bottom: 0;
         opacity: 0.8;
         
@@ -1476,15 +1478,18 @@ object {
 .navbar-inverse .navbar-nav >li {
 	display: inline;
 	margin-right: 20px;
-	margin-top: 20px;
+	//margin-top: 20px;
 }
 .navbar-inverse .navbar-nav>li:last-child {
 	margin-right: 0 !important;
 }
 .navbar-inverse .navbar-nav>li>a {
 	color: #404040;
-	padding: 0;
-	line-height: 35px;
+	padding: 0px 0px;
+	line-height: 65px;
+        border-radius: 4px;
+        
+        
 }
 .navbar-inverse .main-navigation ul > li {
 	display: inline;
@@ -1532,6 +1537,7 @@ object {
 .navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
 	color:#0074c2;
         //background-color: gainsboro;
+        //line-height: 30px;
 }
 .navbar-inverse ul ul {
 	left: -999em;
@@ -1552,8 +1558,8 @@ object {
 .navbar-brand {
 	height: 76px;
 	position: relative;
-	line-height: 60px;
-	padding: 7px 15px;
+	line-height: 70px;
+	padding: 0px 15px;
 	display: inline-block;
 }
 .navbar-brand > img {
@@ -1619,7 +1625,7 @@ object {
 }
 .navbar-inverse .navbar-nav>li>a:hover, 
 .navbar-inverse .navbar-nav>li>a:focus {
-	color: #e96656;
+	color: #FFFFFF;//#e96656;
 }
 .navbar-inverse .navbar-nav>li.current>a {
 	color: #e96656;
@@ -1627,7 +1633,7 @@ object {
 	outline: none;
 }
 ul.nav > li.menu-item-home:hover {
-    border-bottom: 2px solid #13078C;
+    //border-bottom: 2px solid #13078C;
 }
 ul.nav > li.menu-item-home > a:before {
 	content: "";
