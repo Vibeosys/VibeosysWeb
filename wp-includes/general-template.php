@@ -471,7 +471,7 @@ function wp_login_form( $args = array() ) {
 	$login_form_bottom = apply_filters( 'login_form_bottom', '', $args );
 
 	$form = '
-		<form name="' . $args['form_id'] . '" id="' . $args['form_id'] . '" action="' . esc_url( wp_login_url() ) . '" method="post">
+		<form name="' . $args['form_id'] . '" id="' . $args['form_id'] . '" action="' . esc_url( site_url( 'wp-login.php', 'login_post' ) ) . '" method="post">
 			' . $login_form_top . '
 			<p class="login-username">
 				<label for="' . esc_attr( $args['id_username'] ) . '">' . esc_html( $args['label_username'] ) . '</label>
@@ -718,9 +718,10 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
 			$output = "Vibeosys Software pvt Ltd | Website Development, Web Services";
 			break;
                 case 'Openstack Development':
-			$output = "Vibeosys Software pvt Ltd | Linux Administration, Ubuntu Administration, OpenSource Technologies ";
+			$output = "Vibeosys Software pvt Ltd | Linux Administration, "
+                        . "Ubuntu Administration, OpenSource Technologies ";
 			break;
-                case 'Microsoft Development':
+                 case 'Microsoft Development':
 			$output = "Vibeosys Software pvt Ltd | Windows Development";
 			break;
                 case 'Sales':
@@ -887,8 +888,8 @@ function wp_get_document_title() {
 		/* translators: %s: search phrase */
 		$title['title'] = sprintf( __( 'Search Results for &#8220;%s&#8221;' ), get_search_query() );
 
-	// If on the home or front page, use the site title.
-	} elseif ( is_home() && is_front_page() ) {
+	// If on the front page, use the site title.
+	} elseif ( is_front_page() ) {
 		$title['title'] = get_bloginfo( 'name', 'display' );
 
 	// If on a post type archive, use the post type archive title.
@@ -900,14 +901,10 @@ function wp_get_document_title() {
 		$title['title'] = single_term_title( '', false );
 
 	/*
-	 * If we're on the blog page and that page is not the homepage or a single
-	 * page that is designated as the homepage, use the container page's title.
+	 * If we're on the blog page that is not the homepage or
+	 * a single post of any post type, use the post title.
 	 */
-	} elseif ( ( is_home() && ! is_front_page() ) || ( ! is_home() && is_front_page() ) ) {
-		$title['title'] = single_post_title( '', false );
-
-	// If on a single post of any post type, use the post title.
-	} elseif ( is_singular() ) {
+	} elseif ( is_home() || is_singular() ) {
 		$title['title'] = single_post_title( '', false );
 
 	// If on a category or tag archive, use the term title.
@@ -935,14 +932,10 @@ function wp_get_document_title() {
 	}
 
 	// Append the description or site title to give context.
-	if ( is_home() && is_front_page() ) {
+	if ( is_front_page() ) {
 		$title['tagline'] = get_bloginfo( 'description', 'display' );
 	} else {
-            //if($title['title']=="Careers"){
 		$title['site'] = get_bloginfo( $title['title'], 'display' );
-           // }  else {
-              //  $title['site'] = get_bloginfo( 'name', 'display' );
-            //}
 	}
 
 	/**

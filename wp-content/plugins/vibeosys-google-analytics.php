@@ -57,7 +57,7 @@ function vibeosys_google_analytics() { ?>
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-71829158-1', 'auto');
+  ga('create', 'UA-XXXXXXXX-X', 'auto');
   var randomId = TempId;
   ga('set', 'userId', randomId);
   ga('require', 'displayfeatures');
@@ -67,10 +67,22 @@ function vibeosys_google_analytics() { ?>
 
 <script type="text/javascript" id="inspectletjs">
 window.__insp = window.__insp || [];
-__insp.push(['wid', 316412001]);
+__insp.push(['wid', XXXXXXXXX]);
 (function() {
-function ldinsp(){if(typeof window.__inspld !== "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
-setTimeout(ldinsp, 500); document.readyState !== "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+    function ldinsp(){
+        if(typeof window.__inspld !== "undefined") 
+            return; 
+        window.__inspld = 1; 
+        var insp = document.createElement('script'); 
+        insp.type = 'text/javascript'; 
+        insp.async = true; 
+        insp.id = "inspsync"; 
+        insp.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; 
+        var x = document.getElementsByTagName('script')[0]; 
+        x.parentNode.insertBefore(insp, x); 
+    };
+setTimeout(ldinsp, 500); 
+document.readyState !== "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
 })();
 </script>
 
