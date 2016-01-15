@@ -271,7 +271,7 @@ foreach ( $fields as $field ) :
                                 if (in_array($field->field_id,array(7,10,15))):
                                     $form_settings->form_subject .= ', '.$display_value;
                                     if($field->field_id == 10){
-                                        $form_settings->form_subject .= ' Year';
+                                        $form_settings->form_subject .= ' Yr';
                                     }
                                 endif;
 				$body .= sprintf(
