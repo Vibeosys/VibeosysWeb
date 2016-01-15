@@ -13,7 +13,12 @@ jQuery(window).load(function() {
      jQuery('.page_item').parents().addClass('active');
     }
     //query string operations
-    jQ
+    var query = jQuery('#query').text();
+    //alert(query);
+    if(query){
+        jQuery('#vfb-15').val(query).prop('selected', true);
+        jQuery('#vfb-15').attr('readonly','readonly');
+    }
     
     
     // will first fade out the loading animation

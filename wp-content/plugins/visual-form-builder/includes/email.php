@@ -268,7 +268,12 @@ foreach ( $fields as $field ) :
 			else :
 				// Convert new lines to break tags for textarea in html
 				$display_value = ( 'textarea' == $field->field_type ) ? nl2br( $value ) : $value;
-
+                                if (in_array($field->field_id,array(7,10,15))):
+                                    $form_settings->form_subject .= ', '.$display_value;
+                                    if($field->field_id == 10){
+                                        $form_settings->form_subject .= ' Year';
+                                    }
+                                endif;
 				$body .= sprintf(
 					'<tr>
 					<td><strong>%1$s: </strong></td>
@@ -315,7 +320,7 @@ $wpdb->insert( $this->entries_table_name, $entry );
 // Close out the content
 $footer .= '<tr>
 <td class="footer" height="61" align="left" valign="middle" colspan="2">
-<p style="font-size: 12px; font-weight: normal; margin: 0; line-height: 16px; padding: 0;">This email was built and sent using <a href="http://wordpress.org/extend/plugins/visual-form-builder/" style="font-size: 12px;">Visual Form Builder</a>.</p>
+
 </td>
 </tr>
 </table>
