@@ -268,9 +268,9 @@ foreach ( $fields as $field ) :
 			else :
 				// Convert new lines to break tags for textarea in html
 				$display_value = ( 'textarea' == $field->field_type ) ? nl2br( $value ) : $value;
-                                if (in_array($field->field_id,array(7,10,15))):
+                                if (in_array($field->field_id,array(23,26,19))):
                                     $form_settings->form_subject .= ', '.$display_value;
-                                    if($field->field_id == 10){
+                                    if($field->field_id == 26){
                                         $form_settings->form_subject .= ' Yr';
                                     }
                                 endif;
