@@ -70,7 +70,7 @@ select.vfb-select
    
 }
 input[type="text"].vfb-text.Position{
-    background-color: gainsboro;
+    display: none;
     
 }
 select.vfb-select
