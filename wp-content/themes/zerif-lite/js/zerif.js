@@ -7,10 +7,15 @@
 // makes sure the whole site is loaded
 
 jQuery(window).load(function() {
-jQuery('.page_item').addClass('active');
-jQuery('.page_item').parents().addClass('active');
-
-
+    var height = jQuery(window).width();
+    if(height >= 750){
+        jQuery('.page_item').addClass('active');
+     jQuery('.page_item').parents().addClass('active');
+    }
+    //query string operations
+    jQ
+    
+    
     // will first fade out the loading animation
 
     jQuery(".status").fadeOut();

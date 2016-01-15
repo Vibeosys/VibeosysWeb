@@ -6404,7 +6404,10 @@ body.custom-background {
   transition:padding 0.5s linear;  
 }
 
-//visual form builder
+//query string
+.entry-content > button.query-string{
+    display: none;
+}
 
 
 
