@@ -628,7 +628,7 @@ textarea {
 .entry-content input[type="button"],
 .entry-content input[type="reset"],
 .entry-content input[type="submit"] {
-	padding: 5px 20px 5px 20px;
+	padding: 14px 24px 14px 24px;
 }
 .entry-content button:hover,
 .entry-content input[type="button"]:hover,
@@ -2928,7 +2928,7 @@ width: -webkit-calc(100% / 4);
 .contact-us .section-header .section-legend {
 	color: #FFF;
 }
-.contact-us .input-box,textarea {
+.contact-us .input-box {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 20px;

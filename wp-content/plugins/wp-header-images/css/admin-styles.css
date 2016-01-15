@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* CSS Document */
+.wphi .hide{
+	display:none;
+}
+.wphi .head_area{
+	clear:both;
+	position:relative;
+}
+.wphi .head_area a {
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+}
+.wphi p.submit{
+	float:right;
+}
+.wphi h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 19px;
+    padding: 9px 15px 4px 0;
+}
+.wphi h2 span.dashicons{
+	font-size:30px;
+	margin-right:16px;
+}
+.wphi code {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+    right: -21%;
+    top: 0;
+}
+.wphi code .yellow{
+	color:yellow;
+}
+.wphi code .light_blue{
+	color:#0CF;
+}
+.wphi .wphi_settings{
+	padding:0 0 0 4px;
+}
+.wphi .wphi_settings > h3{
+	cursor:pointer;	
+	
+}
+
+.wphi .wphi_settings > h3 span.dashicons{
+	margin-right:4px;
+}
+.wphi .wphi_settings > ul.menu-class{
+	
+}
+
+.wphi .wphi_settings > ul.menu-class > li > div.banner_wrapper{
+	border:6px dashed #ccc;
+	width:90%;
+	min-height:30px;
+	cursor:pointer;
+	text-align:center;
+	padding:40px;
+	
+	
+}
+.wphi .wphi_settings > ul.menu-class > li > h4{
+	font-size:14px;
+}
+.wphi .wphi_settings > ul.menu-class > li > div.banner_wrapper span.dashicons{
+	font-size:60px;
+    position: relative;
+    top: -19px;	
+}
+.wphi .wphi_settings > ul.menu-class > li > div.banner_wrapper label{
+	
+	font-size:30px;
+	color:#ccc;
+	
+}
