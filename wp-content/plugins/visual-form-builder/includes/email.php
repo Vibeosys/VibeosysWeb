@@ -274,6 +274,9 @@ foreach ( $fields as $field ) :
                                         $form_settings->form_subject .= ' Yr';
                                     }
                                 endif;
+                                if(empty($field->field_name)){
+                                    $field->field_name = "Position";
+                                }
 				$body .= sprintf(
 					'<tr>
 					<td><strong>%1$s: </strong></td>
