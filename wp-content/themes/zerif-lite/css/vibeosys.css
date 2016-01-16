@@ -27,7 +27,7 @@ h3.uris-slider-title{
 }
 
 .sales-form-div{
-    background-color: gainsboro;
+   // background-color: gainsboro;
     padding-top: 20px;
     margin-top: 20px;
     min-width: 300px;
@@ -35,44 +35,43 @@ h3.uris-slider-title{
 }
 #sales-main{
     padding-left: 0px;
-    background-color: gainsboro;
     margin-top: 20px;
     min-width: 300px;
     height: auto;
     margin-left: 15px;
 }
-.col-xs-5{
-    background-color: gainsboro;
-    
+
+input.ninja-forms-field.ninja-forms-req.holo[type='text'],
+input.ninja-forms-field.holo[type='text'],
+textarea.ninja-forms-field.holo{
+                width: 400px;
+                font-family: "Roboto", "Droid Sans", sans-serif;
+                font-size: 16px;
+                margin: 0;
+                padding: 8px 8px 6px 8px;
+                position: relative;
+                display: block;
+                outline: none;
+                border: none;
+                background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
+                background-size: 1px 6px, 1px 1px, 1px 6px;
+                background-color: #F7E9FF;
+                border-radius: 0px;
 }
-.phone ,.cemail{
-    width: 100%;
-    height: auto;
-    padding-bottom: 10px;
+input.ninja-form-field.ninja-forms-req.holo[type='text']:hover,
+input.ninja-forms-field.holo[type='text']:hover,
+input.ninja-form-field.ninja-forms-req.holo[type='text']:focus, 
+input.ninja-forms-field.holo[type='text']:focus,
+textarea.ninja-forms-field.holo:hover,
+textarea.ninja-forms-field.holo:focus{
+                background: bottom left linear-gradient(#000, #000) no-repeat, bottom center linear-gradient(#000, #000) repeat-x, bottom right linear-gradient(#000, #000) no-repeat;
+                background-size: 1px 6px, 1px 1px, 1px 6px;       
 }
-.phone img,.cemail img{
-    position: relative;
-    left:40%;
-    padding-top:100px;
-    //background-color: gray;
+.ninja-forms-form-wrap input[type="submit"]{
+    border-radius: 30px;
+    padding: 20px 20px;
 }
-.email-span,.phone-span{
-     position: relative;
-   top:10px;
-    padding-top: 10px;
-    font-family: sans-serif;
-    font-size: 0.9em;
-    
-}
-.email-span{
-     left:30%;
-     text-decoration: underline;
-     color: blue;
-}
-.phone-span{
-     left:30%;
-     color: black;
-}
+
 // style for about us 
 
 .app-name{
@@ -94,8 +93,6 @@ h3.uris-slider-title{
     padding-top: 20px;
 }
 .person-info .name{
-    //padding-top: 30px;
-    //text-align: center;
     min-width: 200px;
 }
 .Discription{
@@ -432,3 +429,4 @@ padding-left:30px;
 {
 opacity:1;
 }
+
