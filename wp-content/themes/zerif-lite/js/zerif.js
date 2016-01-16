@@ -16,8 +16,8 @@ jQuery(window).load(function() {
     var query = jQuery('#query').text();
     //alert(query);
     if(query){
-        jQuery('#vfb-15').val(query).prop('selected', true);
-        jQuery('#vfb-15').attr('readonly','readonly');
+        jQuery('#vfb-29').val(query).prop('selected', true);
+        jQuery('#vfb-29').attr('readonly','readonly');
     }
     
     
