@@ -19,6 +19,14 @@ jQuery(window).load(function() {
         jQuery('input#vfb-29').val(query);
       
     }
+    jQuery('input[type="file"].vfb-text').change(function(){
+       
+        var fname = jQuery('input[type="file"].vfb-text').val();
+            jQuery('input#FileType').val(fname);
+            jQuery('input#FileType').attr('readonly','readonly');
+            
+            
+        });
     
     
     // will first fade out the loading animation

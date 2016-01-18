@@ -553,7 +553,14 @@ foreach ( $fields as $field ) :
 
 
 			$form_item = sprintf(
-				'<input type="file" name="vfb-%1$d" id="%2$s" value="%3$s" class="vfb-text %4$s %5$s %6$s %7$s %8$s" />',
+                                '<div class="uploadfile"></div>
+                                <input style="display: inline;" id="FileType" class="vfb-text file input" type="text">
+				<div style="width: 28px; height: 28px; background: transparent url(&quot;undefined&quot;) 
+				no-repeat scroll right center; display: block; position: absolute; overflow: hidden; 
+				margin: -30px 0px 0px 210px; cursor: pointer;">'
+                                .'<input style="position: relative; height: 28px; width: 28px; display: inline; '
+                                . 'cursor: pointer; opacity: 0; margin-left: 0px;" name="vfb-%1$d" '
+                                . 'id="%2$s" class="vfb-text %4$s %5$s %6$s %7$s %8$s" type="file"></div>',
 				$field_id,
 				$id_attr,
 				$default,

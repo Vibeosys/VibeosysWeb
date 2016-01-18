@@ -1,3 +1,31 @@
+.uploadfile {
+    background: transparent url("/wp-content/uploads/2016/01/file-attachment.png") no-repeat scroll 0% 0%;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin: 5px 0px 0px 208px;
+    left:211px;
+    top: 490px;
+}
+input#FileType {
+    color: #989898;
+    width: 240px;
+    padding: 5px;
+    font-size: 13px;
+    //border: 1px solid #ACACAC;
+    border-radius: 0px;
+    height: 35px;
+    margin-right: 5px;
+    padding-right: 6%;
+}
+
+
+
+
+
+
+
+
 form.visual-form-builder{position:relative;margin:20px 0;background:0;list-style:none;list-style-type:none;list-style-image:none;text-shadow:none;font-family:inherit}form.visual-form-builder li{margin:0!important;width:auto!important;background:none!important;list-style:none!important;list-style-type:none!important;list-style-image:none!important;clear:both}form.visual-form-builder li:before{content:none}form.visual-form-builder ul:after,form.visual-form-builder li:after,form.visual-form-builder li div:after{clear:both;content:'.';display:block;height:0;visibility:hidden}.visual-form-builder br{display:none}form.visual-form-builder .vfb-item-instructions br{display:inline}
 .visual-form-builder ul,.entry-content .visual-form-builder ul,.comment-content .visual-form-builder ul,.mu_register .visual-form-builder ul,.visual-form-builder ol,.entry-content .visual-form-builder ol,.comment-content .visual-form-builder ol,.mu_register .visual-form-builder ol{
     margin:0 0px!important;padding:0!important;background:none!important;list-style:none!important;list-style-type:none!important;list-style-image:none!important;font-size:13px;line-height:inherit}.visual-form-builder ul li{margin:0!important;background:none!important;list-style:none!important;list-style-type:none!important;list-style-image:none!important}.visual-form-builder ul li:before{content:none}.visual-form-builder li,.entry-content .visual-form-builder li,.comment-content .visual-form-builder li,.mu_register .visual-form-builder li{clear:both;margin:0!important;padding:6px 1% 9px!important;width:64%;background:none!important;list-style:none!important;list-style-type:none!important;list-style-image:none!important}.visual-form-builder li:before,.entry-content .visual-form-builder li:before,.comment-content .visual-form-builder li:before,.mu_register .visual-form-builder li:before{content:none}.vfb-span,.visual-form-builder li div span.vfb-span,.visual-form-builder [class*="vfb-span"],span.vfb-full input,span.vfb-full input[type="text"].vfb-medium,span.vfb-full select{display:block;float:left;margin:0;width:100%}.visual-form-builder span.vfb-left{float:left;width:48%}.visual-form-builder span.vfb-right{float:right;width:48%}.visual-form-builder span.vfb-span ul li{list-style:disc}.visual-form-builder span.vfb-span ol li{list-style:decimal}.visual-form-builder span.vfb-right input,.visual-form-builder span.vfb-right input[type="text"],.visual-form-builder span.vfb-right select,.visual-form-builder span.vfb-left input,.visual-form-builder span.vfb-left input[type="text"],.visual-form-builder span.vfb-left select{width:100%!important}.visual-form-builder span.vfb-time{float:left;margin:0 .3em 0 0}.rtl .visual-form-builder span.vfb-time{float:right;margin:0 0 0 .3em}.visual-form-builder li div label,.visual-form-builder li span label{margin:0;font-size:90%}
@@ -56,6 +84,7 @@ input.vfb-text,
 input[type="text"].vfb-text,
 input[type="tel"].vfb-text,
 input[type="email"].vfb-text,
+input[type="file"].vfb-text,
 input[type="url"].vfb-text,
 textarea.vfb-textarea,
 select.vfb-select
