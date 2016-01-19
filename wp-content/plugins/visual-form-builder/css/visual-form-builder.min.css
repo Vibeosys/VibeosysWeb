@@ -2,21 +2,36 @@
     background: transparent url("/wp-content/uploads/2016/01/file-attachment.png") no-repeat scroll 0% 0%;
     width: 28px;
     height: 28px;
-    position: absolute;
+    position: relative;
     margin: 5px 0px 0px 208px;
-    left:211px;
-    top: 490px;
+    left:170px;
+    top: 12px;
+    z-index: 1;
 }
 input#FileType {
     color: #989898;
-    width: 240px;
+    width: 200px;
     padding: 5px;
     font-size: 13px;
     //border: 1px solid #ACACAC;
     border-radius: 0px;
     height: 35px;
     margin-right: 5px;
-    padding-right: 6%;
+    padding-right: 28px;
+    position: relative;
+    top: -20px;
+}
+   // margin-top: -100px;
+div#browse-file-div{
+    left: 170px;
+    background: transparent;
+    z-index:2;
+}
+span#notify-span{
+   // background: red;
+    position: relative;
+    top: -50px;
+    font-size: 14px;
 }
 
 

@@ -551,16 +551,15 @@ foreach ( $fields as $field ) :
 			$options = maybe_unserialize( $field->field_options );
 			$accept = ( !empty( $options[0] ) ) ? " {accept:'$options[0]'}" : '';
 
-
+                         $percent = '%';
 			$form_item = sprintf(
                                 '<div class="uploadfile"></div>
                                 <input style="display: inline;" id="FileType" class="vfb-text file input" type="text">
-				<div style="width: 28px; height: 28px; background: transparent url(&quot;undefined&quot;) 
-				no-repeat scroll right center; display: block; position: absolute; overflow: hidden; 
-				margin: -30px 0px 0px 210px; cursor: pointer;">'
+				<div id="browse-file-div" style="width: 28px; height: 28px; background:transparent; display: block; position: relative; overflow: hidden; 
+				top: -53px; cursor: pointer; left:170px; z-index:2;">'
                                 .'<input style="position: relative; height: 28px; width: 28px; display: inline; '
                                 . 'cursor: pointer; opacity: 0; margin-left: 0px;" name="vfb-%1$d" '
-                                . 'id="%2$s" class="vfb-text %4$s %5$s %6$s %7$s %8$s" type="file"></div>',
+                                . 'id="%2$s" class="vfb-text %4$s %5$s %6$s %7$s %8$s" type="file"></div><span id="notify-span"><i>(Attach only doc,docx,pdf and size less than 2MB)</i></span>',
 				$field_id,
 				$id_attr,
 				$default,

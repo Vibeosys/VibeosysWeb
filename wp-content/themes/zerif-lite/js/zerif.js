@@ -19,11 +19,23 @@ jQuery(window).load(function() {
         jQuery('input#vfb-29').val(query);
       
     }
+    //input type file design 
     jQuery('input[type="file"].vfb-text').change(function(){
        
         var fname = jQuery('input[type="file"].vfb-text').val();
+        
             jQuery('input#FileType').val(fname);
             jQuery('input#FileType').attr('readonly','readonly');
+             var allowedFiles = [".doc", ".docx", ".pdf"];
+            var lblError = jQuery("span#notify-span");
+            var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(" + allowedFiles.join('|') + ")$");
+            if (!regex.test(fname.toLowerCase())) {
+                lblError.css("color","red");
+                lblError.html("Please upload files having extensions: <b>" + allowedFiles.join(', ') + "</b> only.");
+                return false;
+            }
+            lblError.html('');
+            return true;
             
             
         });
