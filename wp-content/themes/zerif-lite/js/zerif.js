@@ -75,10 +75,10 @@ var callback_mobile_dropdown = function () {
         }
     });
     jQuery('.dropdownmenu').click(function(){
-        if( jQuery(this).parent('li').hasClass('this-open') ){
-            jQuery(this).parent('li').removeClass('this-open');
+        if( jQuery(this).parent('li').hasClass('active this-open') ){
+            jQuery(this).parent('li').removeClass('active this-open');
         }else{
-            jQuery(this).parent('li').addClass('this-open');
+            jQuery(this).parent('li').addClass('active this-open');
         }
     });
     jQuery('.has_children > a').click(function(){
@@ -411,7 +411,7 @@ jQuery(function() {
 
 jQuery('.navbar-toggle').on('click', function () {
 
-    jQuery(this).toggleClass('active');
+    jQuery(".navbar-nav > li > a").css("line-height","35px");
 
 });
 
