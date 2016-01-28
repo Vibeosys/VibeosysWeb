@@ -420,9 +420,14 @@ height:30%;
 color:#FFF;
 text-align:left;
 padding-left:30px;
-
-
-
+}
+.bannerBg h2{
+font-size: 1.7em;
+font-weight:normal;
+font-family: Arial Unicode MS;
+}
+.bannerBg p{
+    font-family: Arial Unicode MS;
 }
 
 .centerBox
