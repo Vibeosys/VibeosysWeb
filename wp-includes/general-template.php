@@ -740,6 +740,11 @@ function get_bloginfo( $show = '', $filter = 'raw' ) {
                 case 'Safar Ka Sathi – Mobile Travel App':
 			$output = "Vibeosys Software pvt Ltd";
 			break;
+                case 'QuickServe Restaurant Ordering System':
+			$output = "Vibeosys Software pvt Ltd | QuickServe TM | "
+                        . "Restaurant KOT System | Restaurant Ordering System | "
+                        . "Restaurant Hospitality | Vibeosys product";
+			break;
 		case 'name':
 		default:
 			$output = get_option('blogname');
